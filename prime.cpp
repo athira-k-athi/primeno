@@ -1,3 +1,4 @@
+//by using a boolean variable
 #include<iostream>
 int main()
 {
