@@ -1,19 +1,20 @@
 //by using a boolean variable
 #include<iostream>
+using namespace std;
 int main()
 {
     int value;
     read:
     bool is_prime = true;
-    std::cout<<"enter a number : ";
-    std::cin>>value;
+    cout<<"enter a number : ";
+    cin>>value;
     if(value==1)
     {
-        std::cout<<"1 is neither prime nor composite"<<'\n';
+        cout<<"1 is neither prime nor composite"<<'\n';
     }
     else if(value<0)
     {
-        std::cout<<"entered a -ve number"<<'\n';
+        cout<<"entered a -ve number"<<'\n';
     }
     else
     {
@@ -22,9 +23,9 @@ int main()
             is_prime = (value%trial!=0);
         }
         if(is_prime==1)
-                std::cout<<value<<" is a prime number"<<'\n';
+                cout<<value<<" is a prime number"<<'\n';
         else
-        std::cout<<value<<" is not a prime number"<<'\n';
+        cout<<value<<" is not a prime number"<<'\n';
     }
     goto read;
 
